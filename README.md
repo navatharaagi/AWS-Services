@@ -2,8 +2,8 @@
 - Create an EC2 instance, & ssh into it.
 - If ssh not connecting, check
 VPC—>RT—> Routes tab, ensure that you have a default route pointing to your Internet gateway (IGW).
-If IGW not there, copy IGW ID,if IGW not there create one & attach it to VPC.
-VPC—>RT—> Routes tab—>edit—>Add—>0.0.0.0/0—>Paste the IGW-ID—>save.
+- If IGW not there, copy IGW ID,if IGW not there create one & attach it to VPC.
+- VPC—>RT—> Routes tab—>edit—>Add—>0.0.0.0/0—>Paste the IGW-ID—>save.
 
 -Install Java
 [ec2@]$sudo yum install java-1.8.0-openjdk.x86_64
