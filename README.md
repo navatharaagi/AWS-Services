@@ -11,14 +11,15 @@ VPC—>RT—> Routes tab, ensure that you have a default route pointing to your 
 [ec2@]$java -version
 ```
 - Download Tomcat8
+```ssh
 [ec2@]$wget http://download.nextag.com/apache/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz
 [ec2@]$tar xzf apache-tomcat-8.5.23.tar.gz    /* to extract archive tar file
 [ec2@]ls
 [ec2@]$cd apache-tomcat-8.5.23
 [ec2@]$./bin/startup.sh      /*to start Tomcat
-
-EC2—>SG—>select SG of running EC2 instance—>Inbound Rules—>Edit—>Custom TCP Rule—>8080—>save
--Copy Public DNS of running instance, goto browser
+```
+- EC2—>SG—>select SG of running EC2 instance—>Inbound Rules—>Edit—>Custom TCP Rule—>8080—>save
+- Copy Public DNS of running instance, goto browser
 http:/Paste Public DNS:8080/     /*should open tomcat page  
 
 [ec2@]$./bin/shutdown.sh      /*to stop Tomcat
