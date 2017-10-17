@@ -6,10 +6,11 @@ VPC—>RT—> Routes tab, ensure that you have a default route pointing to your 
 - VPC—>RT—> Routes tab—>edit—>Add—>0.0.0.0/0—>Paste the IGW-ID—>save.
 
 - Install Java
+```ssh
 [ec2@]$sudo yum install java-1.8.0-openjdk.x86_64
 [ec2@]$java -version
-
--Download Tomcat8
+```
+- Download Tomcat8
 [ec2@]$wget http://download.nextag.com/apache/tomcat/tomcat-8/v8.5.23/bin/apache-tomcat-8.5.23.tar.gz
 [ec2@]$tar xzf apache-tomcat-8.5.23.tar.gz    /* to extract archive tar file
 [ec2@]ls
