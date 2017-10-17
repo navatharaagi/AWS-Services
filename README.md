@@ -20,8 +20,8 @@ VPC—>RT—> Routes tab, ensure that you have a default route pointing to your 
 ```
 - EC2—>SG—>select SG of running EC2 instance—>Inbound Rules—>Edit—>Custom TCP Rule—>8080—>save
 - Copy Public DNS of running instance, goto browser
-http:/Paste Public DNS:8080    /*should open tomcat page  
+http:/Paste Public DNS:8080    /* should open tomcat page  
 
 ```ssh
-[ec2@]$./bin/shutdown.sh      /*to stop Tomcat
+[ec2@]$./bin/shutdown.sh      /* to stop Tomcat
 ```
