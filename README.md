@@ -1,6 +1,6 @@
 #### Setup EC2 instance with Tomcat8 in AWS - Manually
-Create an EC2 instance, & ssh into it.
-If ssh not connecting, check
+- Create an EC2 instance, & ssh into it.
+- If ssh not connecting, check
 VPC—>RT—> Routes tab, ensure that you have a default route pointing to your Internet gateway (IGW).
 If IGW not there, copy IGW ID,if IGW not there create one & attach it to VPC.
 VPC—>RT—> Routes tab—>edit—>Add—>0.0.0.0/0—>Paste the IGW-ID—>save.
