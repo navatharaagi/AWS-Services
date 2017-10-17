@@ -5,7 +5,7 @@ VPC—>RT—> Routes tab, ensure that you have a default route pointing to your 
 - If IGW not there, copy IGW ID,if IGW not there create one & attach it to VPC.
 - VPC—>RT—> Routes tab—>edit—>Add—>0.0.0.0/0—>Paste the IGW-ID—>save.
 
--Install Java
+- Install Java
 [ec2@]$sudo yum install java-1.8.0-openjdk.x86_64
 [ec2@]$java -version
 
